@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PVZ.Menu">
+   <children>
+      <ImageView accessibleRole="BUTTON" fitHeight="700.0" fitWidth="1300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Desktop/imp/plants-vs-zombies-image_044300651_241.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="vb" alignment="CENTER" layoutX="400.0" layoutY="250.0" prefHeight="200.0" prefWidth="500.0">
+         <children>
+            <Button fx:id="resume" mnemonicParsing="false" onAction="#Resume" opacity="0.75" prefHeight="50.0" prefWidth="500.0" text="RESUME GAME">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Candara Light" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="start" mnemonicParsing="false" onAction="#Start" opacity="0.75" prefHeight="50.0" prefWidth="500.0" text="NEW GAME">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Candara Light" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" opacity="0.75" prefHeight="50.0" prefWidth="500.0" text="EXIT">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Candara Light" size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <MediaView fx:id="mv" fitHeight="200.0" fitWidth="200.0" layoutX="90.0" layoutY="104.0" />
+   </children>
+</Pane>
